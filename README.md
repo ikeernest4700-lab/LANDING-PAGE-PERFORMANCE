@@ -68,7 +68,7 @@ An e-commerce platform experienced inconsistent performance across multiple land
 
 ## Dashboard Preview
 
-![Landing Page Performance Dashboard](image/dashboard.png)
+![Landing Page Performance Dashboard](image/Dashboard.png)
 
 ---
 
@@ -93,13 +93,13 @@ The Chi-Square test was conducted across all landing pages to determine whether 
 
 A hypothesis test was conducted to compare the bounce rate of Lander 5 against the average bounce rate of the remaining landing pages.
 
-![Bounce Rate Hypothesis Test](image/hypothesis-test-Bounce-rate.png)
+![Bounce Rate Hypothesis Test](image/Hypothesis-test-Bounce-rate.png)
 
 ### Conversion Rate Hypothesis Test
 
 A second hypothesis test was conducted to validate whether Lander 5 achieved a statistically higher conversion rate than the other landing pages.
 
-![Conversion Rate Hypothesis Test](image/hypothesis%20test.png)
+![Conversion Rate Hypothesis Test](image/hypothesis-test.png)
 
 ---
 
