@@ -26,7 +26,7 @@ I am an aspiring Data Analyst focused on transforming raw data into actionable b
 # Project 1: Landing Page Performance Analysis
 
 **Live Assets**:  
-[Project 1 Folder (Dashboards, Excel, PDFs, SQL)](https://drive.google.com/drive/folders/1dTU5CpzmJBNrTkHeOSnLvu6AkfCnlwlp?usp=drive_link)
+[Project 1 Folder (Dashboards, Excel, PDFs, SQL)](https://drive.google.com/drive/folders/1KIKdlMwQxnAs7cOSX3haqWUeD6BB6Fyc?usp=drive_link)
 
 ---
 
