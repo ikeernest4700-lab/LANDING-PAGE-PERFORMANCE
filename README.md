@@ -68,9 +68,7 @@ An e-commerce platform experienced inconsistent performance across multiple land
 
 ## Dashboard Preview
 
-<!-- INSERT YOUR DASHBOARD IMAGE PATH HERE -->
-
-![Landing Page Dashboard](image/dashboard.png)
+![Landing Page Performance Dashboard](image/dashboard.png)
 
 ---
 
@@ -85,9 +83,23 @@ An e-commerce platform experienced inconsistent performance across multiple land
 
 ## Statistical Validation
 
-<!-- INSERT YOUR EXCEL STATISTICS IMAGE PATH HERE -->
+### Chi-Square Test
 
-![Excel Statistical Analysis](image/hypothesis_test.png)
+The Chi-Square test was conducted across all landing pages to determine whether statistically significant performance differences existed between pages.
+
+![Chi-Square Test](image/chisq-test.png)
+
+### Bounce Rate Hypothesis Test
+
+A hypothesis test was conducted to compare the bounce rate of Lander 5 against the average bounce rate of the remaining landing pages.
+
+![Bounce Rate Hypothesis Test](image/hypothesis-test-Bounce-rate.png)
+
+### Conversion Rate Hypothesis Test
+
+A second hypothesis test was conducted to validate whether Lander 5 achieved a statistically higher conversion rate than the other landing pages.
+
+![Conversion Rate Hypothesis Test](image/hypothesis%20test.png)
 
 ---
 
@@ -106,12 +118,12 @@ This project demonstrates how SQL-driven data preparation, Excel-based validatio
 ## Project Files
 
 ### SQL Scripts
-<!-- Optional link to SQL file -->
-- [View SQL Analysis](sql/landingpagepsql.sql)
+- SQL scripts used for data cleaning, joins, transformation, and KPI generation are included in this repository.
 
-### Dashboard PDF
-<!-- Optional link to PDF -->
-- [View Dashboard Report](pdf/dashboard_report.pdf)
+### Dashboard & Supporting Documents
+- Dashboard screenshots
+- Statistical validation outputs
+- PDF reports
 
 ---
 
