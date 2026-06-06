@@ -108,7 +108,9 @@ end as landing_page,
 case when viewed= 1 then 'Yes' else 'No' end as Bounced
 from view_number 
 ```
- ##View full Sql script here (sql/LandingPageanalysis.sql)
+ ## View full Sql script here 
+ [Download SQL Script](sql/LandingPageAnalysis.sql)
+ [Download SQL Script](sql/Landing-page-psql.sql)
  
 ---
 
