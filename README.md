@@ -21,6 +21,8 @@ Core Skills:
 
 # Project 1: Landing Page Performance Analysis
 
+**Live Assets**: [Project 1 Folder (Dashboards, Excel, PDFs, SQL)](https://drive.google.com/drive/folders/1dTU5CpzmJBNrTkHeOSnLvu6AkfCnlwlp?usp=drive_link)
+
 ## Business Problem
 An e-commerce platform experienced inconsistent performance across multiple landing pages, resulting in high bounce rates and lost revenue opportunities.
 
