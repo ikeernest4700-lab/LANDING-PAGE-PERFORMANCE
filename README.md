@@ -48,6 +48,70 @@ An e-commerce platform experienced inconsistent performance across multiple land
 
 ---
 
+## SQL Data Pipeline Design
+
+This project uses a structured SQL workflow split into two distinct layers to support both statistical analysis and business intelligence reporting.
+
+---
+
+### 1. Data Preparation Layer (ETL for Excel Analysis)
+
+SQL was used to prepare and transform raw data before exporting to Excel for statistical analysis.
+
+Key operations included:
+- Data cleaning (removing duplicates, handling missing values)
+- Joining multiple raw tables into a unified analytical dataset
+- Creating calculated fields for statistical testing
+- Aggregating data for hypothesis testing inputs
+
+This dataset was exported to Excel for:
+- Chi-Square tests
+- Hypothesis testing
+- Statistical validation of landing page performance
+
+---
+
+### 2. BI Reporting Layer (Power BI + DAX)
+
+A separate SQL dataset was created specifically for Power BI reporting and dashboard development.
+
+This layer focused on:
+- Aggregated KPI tables for fast dashboard performance
+- Conversion rate calculations
+- Bounce rate and engagement metrics
+- Data modeling for star-schema-style reporting
+
+DAX measures were then used in Power BI to:
+- Calculate dynamic conversion rates
+- Measure bounce rate performance
+- Compare landing page effectiveness
+- Build interactive visualizations for business decision-making
+
+---
+
+### Sample SQL Query (Reporting Layer)
+
+```sql
+view_number as (select 
+h.website_session_id,
+btrim(regexp_replace(h.pageview_url,'[^a-zA-Z0-9]',' ','g')) as landing_page,
+count(wp.*) as viewed
+from homepage as h
+inner join website_pageviews  as wp
+on h.website_session_id=wp.website_session_id
+group by 1,2)
+
+
+select 
+case when landing_page in('home','lander 1','lander 2','lander 3','lander 4') then 'Landing B' else 'Landing A'
+end as landing_page,
+case when viewed= 1 then 'Yes' else 'No' end as Bounced
+from view_number
+
+ ##View full Sql script here (sql/LandingPageanalysis.sql)
+ 
+---
+
 ## Data Preparation & Analysis Approach
 - Performed data cleaning and transformation using SQL:
   - Removed duplicates
