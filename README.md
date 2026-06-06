@@ -106,8 +106,8 @@ select
 case when landing_page in('home','lander 1','lander 2','lander 3','lander 4') then 'Landing B' else 'Landing A'
 end as landing_page,
 case when viewed= 1 then 'Yes' else 'No' end as Bounced
-from view_number
-
+from view_number 
+```
  ##View full Sql script here (sql/LandingPageanalysis.sql)
  
 ---
