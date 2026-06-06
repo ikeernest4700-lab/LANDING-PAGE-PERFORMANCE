@@ -31,7 +31,7 @@ I am an aspiring Data Analyst focused on transforming raw data into actionable b
 ---
 
 ## Business Problem
-An e-commerce platform experienced inconsistent performance across multiple landing pages, resulting in high bounce rates and lost revenue opportunities.
+An e-commerce platform **Mr Fuzzy Teddy Bear**, experienced inconsistent performance across multiple landing pages, resulting in high bounce rates and lost revenue opportunities.
 
 ---
 
@@ -231,5 +231,13 @@ Currently expanding into Python for:
 - Data cleaning automation
 - ETL pipelines
 - Advanced analytics workflows
+
+---
+
+## Contact
+- LinkedIn: https://www.linkedin.com/in/emeka-ike-108748198/
+- Email: ikeernest4700@gmail.com
+- Open to entry-level Data Analyst roles, collaborations, or feedback
+
     end as Bounced
 from view_number;
