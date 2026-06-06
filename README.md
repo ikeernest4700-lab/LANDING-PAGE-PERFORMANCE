@@ -113,7 +113,9 @@ select
     case 
         when viewed = 1 then 'Yes' 
         else 'No'  
-        sql ```
+        END AS Bounced
+FROM view_number;
+```
 
 ---
 
