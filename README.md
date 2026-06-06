@@ -99,7 +99,7 @@ A hypothesis test was conducted to compare the bounce rate of Lander 5 against t
 
 A second hypothesis test was conducted to validate whether Lander 5 achieved a statistically higher conversion rate than the other landing pages.
 
-![Conversion Rate Hypothesis Test](image/hypothesis-test.png)
+![Conversion Rate Hypothesis Test](image/Hypothesis-test.png)
 
 ---
 
