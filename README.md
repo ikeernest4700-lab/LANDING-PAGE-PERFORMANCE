@@ -112,11 +112,14 @@ select
     
     case 
         when viewed = 1 then 'Yes' 
-        else 'No'  ```
+        else 'No'  
+        sql ```
 
 ---
 
-        ## SQL Scripts & Project Files
+
+
+ ## SQL Scripts & Project Files
 
 ### View Full SQL Scripts
 - [Excel Statistical Prep SQL](sql/LandingPageAnalysis.sql)
