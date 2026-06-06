@@ -66,12 +66,28 @@ An e-commerce platform experienced inconsistent performance across multiple land
 
 ---
 
+## Dashboard Preview
+
+<!-- INSERT YOUR DASHBOARD IMAGE PATH HERE -->
+
+![Landing Page Dashboard](image/dashboard.png)
+
+---
+
 ## Key Insights
 - Statistically significant differences exist between landing pages (p-value < 0.05)
 - Lander 5 was the top-performing page:
   - Conversion Rate: **10.17%**
   - Bounce Rate: **36.87%**
 - Mobile users showed higher bounce rates compared to desktop users
+
+---
+
+## Statistical Validation
+
+<!-- INSERT YOUR EXCEL STATISTICS IMAGE PATH HERE -->
+
+![Excel Statistical Analysis](image/hypothesis_test.png)
 
 ---
 
@@ -88,7 +104,14 @@ This project demonstrates how SQL-driven data preparation, Excel-based validatio
 ---
 
 ## Project Files
-All dashboards, Excel validation outputs, SQL scripts, and supporting visuals are included in this repository.
+
+### SQL Scripts
+<!-- Optional link to SQL file -->
+- [View SQL Analysis](sql/landingpagepsql.sql)
+
+### Dashboard PDF
+<!-- Optional link to PDF -->
+- [View Dashboard Report](pdf/dashboard_report.pdf)
 
 ---
 
