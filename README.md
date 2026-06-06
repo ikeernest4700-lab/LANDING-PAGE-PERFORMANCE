@@ -112,8 +112,7 @@ select
     
     case 
         when viewed = 1 then 'Yes' 
-        else 'No' 
-        ```
+        else 'No'  ```
 
 ---
 
