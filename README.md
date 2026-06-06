@@ -109,8 +109,9 @@ case when viewed= 1 then 'Yes' else 'No' end as Bounced
 from view_number 
 ```
  ## View full Sql script here 
- [Download SQL Script](sql/LandingPageAnalysis.sql)
- [Download SQL Script](sql/Landing-page-psql.sql)
+ [Download SQL Script for Excel statistical Prep](sql/LandingPageAnalysis.sql)
+ 
+ [Download SQL Script for Power Bi Reporting](sql/Landing-page-psql.sql)
  
 ---
 
