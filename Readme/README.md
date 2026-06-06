@@ -11,9 +11,9 @@ Aspiring Data Analyst | Excel • SQL • Power BI • Python (Learning)
 I am an aspiring Data Analyst focused on transforming raw data into actionable business insights that improve revenue, user experience, and decision-making.
 
 Core Skills:
-- Excel (Pivot Tables, Data Cleaning, Statistical Analysis)
-- SQL (Joins, CTEs, Window Functions)
-- Power BI (DAX, Dashboards, Funnel & Cohort Analysis)
+- Excel (Data inspection, validation, exploratory analysis)
+- SQL (Data cleaning, joins, CTEs, Window Functions, transformation)
+- Power BI (Dashboards, Funnel & Cohort Analysis)
 - Business Analytics (Conversion Optimization, ROI Analysis)
 - Python (Currently Learning)
 
@@ -27,28 +27,40 @@ An e-commerce platform experienced inconsistent performance across multiple land
 ---
 
 ## Tools Used
-- Excel (Data Cleaning and Statistical Testing)
-- SQL (Data Extraction and Transformation)
-- Power BI (Dashboard and Visualization)
+- SQL (Data cleaning, transformation, joins, and aggregation)
+- Excel (Data inspection and validation across multiple joined tables)
+- Power BI (Dashboard and visualization)
 
 ---
 
 ## Key Metrics
-- Total Visits: 473,000  
-- Bounce Rate: 44.76%  
-- Conversion Rate: 6.83%  
-- Orders: 32.31K  
-- Revenue: $2.63M  
+
+**Traffic & Engagement**
+- Total Visits: **473,000**
+- Bounce Rate: **44.76%**
+
+**Performance**
+- Conversion Rate: **6.83%**
+- Orders: **32,310**
+
+**Revenue**
+- Total Revenue: **$2.63M**
 
 ---
 
-## Analysis Approach
-- Built a landing page performance dashboard
+## Data Preparation & Analysis Approach
+- Performed data cleaning and transformation using SQL:
+  - Removed duplicates
+  - Handled missing values
+  - Joined multiple raw tables into a unified dataset
+  - Created calculated fields using SQL aggregations and transformations
+- Used Excel to inspect and validate multiple joined tables before and after transformation
+- Built an interactive landing page performance dashboard in Power BI
 - Segmented data by:
   - Landing pages (Home Page, Lander 1–5)
   - Device type (Mobile vs Desktop)
   - Traffic sources (Bing, Facebook, Social)
-- Performed statistical analysis:
+- Conducted statistical analysis:
   - Chi-Square test for landing page performance differences
   - Hypothesis testing for conversion and bounce rates
 
@@ -57,26 +69,26 @@ An e-commerce platform experienced inconsistent performance across multiple land
 ## Key Insights
 - Statistically significant differences exist between landing pages (p-value < 0.05)
 - Lander 5 was the top-performing page:
-  - Conversion Rate: 10.17%
-  - Bounce Rate: 36.87%
+  - Conversion Rate: **10.17%**
+  - Bounce Rate: **36.87%**
 - Mobile users showed higher bounce rates compared to desktop users
 
 ---
 
 ## Business Impact
-- Estimated $1.18M potential revenue loss due to poor-performing pages
+- Estimated **$1.18M potential revenue loss** due to underperforming landing pages
 - Identified optimization opportunities in UX and messaging
-- Recommended reallocating traffic to high-performing landing pages
+- Recommended reallocating traffic toward high-performing landing pages to improve overall conversion rate
 
 ---
 
 ## Outcome
-This project demonstrates how data-driven analysis can improve conversion rates and directly impact revenue performance.
+This project demonstrates how SQL-driven data preparation, Excel-based validation, and Power BI visualization can work together to generate actionable business insights that directly impact conversion performance and revenue.
 
 ---
 
 ## Project Files
-All dashboards, Excel analysis, and supporting visuals are included in this repository.
+All dashboards, Excel validation outputs, SQL scripts, and supporting visuals are included in this repository.
 
 ---
 
