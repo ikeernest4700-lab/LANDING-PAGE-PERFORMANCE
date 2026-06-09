@@ -254,6 +254,3 @@ Currently expanding into Python for:
 - LinkedIn: https://www.linkedin.com/in/emeka-ike-108748198/
 - Email: ikeernest4700@gmail.com
 - Open to entry-level Data Analyst roles, collaborations, or feedback
-
-    end as Bounced
-from view_number;
