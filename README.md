@@ -4,121 +4,142 @@ Landing page performance analysis using SQL, Excel, and Power BI to identify con
 
 ---
 
-# Data Analytics Portfolio
-
-**Ike Emeka Ernest**  
-Aspiring Data Analyst | Excel • SQL • Power BI • Python (Learning)
+# Landing Page Performance Analysis  
+SQL • Excel • Power BI • Statistical Analysis
 
 ---
 
-## About Me
-I am an aspiring Data Analyst focused on transforming raw data into actionable business insights that improve revenue, user experience, and decision-making.
-
-### Core Skills
-- Excel: Data inspection, validation, exploratory analysis  
-- SQL: Data cleaning, joins, CTEs, window functions, transformation  
-- Power BI: Dashboards, KPI creation, Funnel & Cohort Analysis  
-- Business Analytics: Conversion optimization, ROI analysis  
-- Python: Currently learning (automation & ETL focus)
-
----
-
-# Landing Page Performance Analysis
-
-**Live Assets**:  
-[Project 1 Folder (Dashboards, Excel, PDFs, SQL)](https://drive.google.com/drive/folders/1KIKdlMwQxnAs7cOSX3haqWUeD6BB6Fyc?usp=drive_link)
+## Overview
+This project analyzes landing page performance for an e-commerce platform using SQL, Excel, and Power BI. The goal is to identify conversion drivers, bounce rate issues, and revenue optimization opportunities.
 
 ---
 
 ## Business Problem
-An e-commerce platform **Mr Fuzzy Teddy Bear**, experienced inconsistent performance across multiple landing pages, resulting in high bounce rates and lost revenue opportunities.
+The e-commerce platform **Mr Fuzzy Teddy Bear** experienced inconsistent landing page performance, resulting in:
+
+- High bounce rates on certain landing pages  
+- Uneven conversion rates across traffic sources  
+- Lost revenue opportunities  
 
 ---
 
-## Tools Used
-- **SQL** → Data cleaning, transformation, joins, aggregation  
-- **Excel** → Data inspection and validation across multiple joined tables  
-- **Power BI** → Dashboard development and KPI visualization  
+## Objective
+The objective of this analysis is to:
+
+- Identify best and worst performing landing pages  
+- Measure conversion rate and bounce rate differences  
+- Understand user behavior across devices and traffic sources  
+- Identify opportunities for revenue optimization  
 
 ---
 
-## Data Preparation & Analysis Approach
-- Cleaned and transformed raw data using SQL:
-  - Removed duplicates
-  - Handled missing values
-  - Joined multiple raw tables into unified dataset
-- Used Excel for data inspection and validation
-- Built Power BI dashboard for performance tracking
-- Segmented data by:
-  - Landing pages (Home Page, Lander 1–5)
-  - Device type (Mobile vs Desktop)
-  - Traffic sources (Bing, Facebook, Social)
-- Conducted statistical analysis:
-  - Chi-Square test for landing page differences
-  - Hypothesis testing for conversion and bounce rates
+## Data Source
+This project uses a public dataset from Maven Analytics as part of a data analytics challenge.
+
+Source: https://www.mavenanalytics.io/data-playground
 
 ---
 
-## SQL Data Pipeline Design
-
-This project uses a structured SQL workflow split into two layers:
-
-### 1. Data Preparation Layer (ETL for Excel Analysis)
-- Data cleaning and transformation
-- Joining multiple raw tables
-- Creating calculated fields for statistical testing
-- Aggregating data for Excel-based validation
-
-Used for:
-- Chi-Square tests
-- Hypothesis testing
-- Statistical validation
+## Tools & Technologies
+- SQL → Data cleaning, transformation, joins, aggregations  
+- Excel → Data validation and statistical testing  
+- Power BI → Dashboard development and KPI visualization  
+- Statistics → Chi-square test, hypothesis testing  
 
 ---
 
-### 2. BI Reporting Layer (Power BI + DAX)
-- KPI aggregation for dashboards
-- Conversion rate calculations
-- Bounce rate metrics
-- Data modeling for reporting layer
+## Dataset Overview
+The dataset includes:
 
-Used in Power BI for:
-- Dynamic KPI calculations
-- Landing page comparisons
-- Interactive dashboards
+- Website session-level interaction data  
+- Multiple landing pages (Home, Lander 1–5)  
+- Traffic sources (Bing, Facebook, Social, etc.)  
+- Device types (Mobile, Desktop)  
 
 ---
 
-## Sample SQL Query (Reporting Layer)
+## Project Files
+
+### SQL Scripts
+- Landing Page Analysis SQL (`sql/LandingPageAnalysis.sql`)  
+- Power BI Reporting SQL (`sql/Landing-page-psql.sql`)  
+
+### Supporting Files
+- Full project assets (Excel files, dashboards, reports):  
+  https://drive.google.com/drive/folders/1KIKdlMwQxnAs7cOSX3haqWUeD6BB6Fyc?usp=drive_link  
+
+---
+
+## Data Workflow
+
+### 1. Data Preparation (SQL)
+- Removed duplicates  
+- Handled missing values  
+- Joined multiple raw tables into a unified dataset  
+- Created calculated fields for analysis  
+
+---
+
+### 2. Data Validation (Excel)
+- Verified cleaned datasets  
+- Cross-checked transformed tables  
+- Validated statistical outputs before analysis  
+
+---
+
+### 3. Reporting Layer (Power BI)
+- Built interactive dashboards  
+- Created KPIs:
+  - Conversion rate  
+  - Bounce rate  
+  - Landing page performance metrics  
+
+---
+
+### 4. Segmentation Analysis
+Data was segmented by:
+
+- Landing pages (Home Page, Lander 1–5)  
+- Device type (Mobile vs Desktop)  
+- Traffic sources (Bing, Facebook, Social)  
+
+---
+
+### 5. Statistical Analysis
+- Chi-square test to determine landing page performance differences  
+- Hypothesis testing for bounce rate and conversion rate validation  
+
+---
+
+## SQL Example
 
 ```sql
-view_number as (
-    select 
+WITH view_number AS (
+    SELECT 
         h.website_session_id,
-        btrim(regexp_replace(h.pageview_url,'[^a-zA-Z0-9]',' ','g')) as landing_page,
-        count(wp.*) as viewed
-    from homepage as h
-    inner join website_pageviews wp
-        on h.website_session_id = wp.website_session_id
-    group by 1,2
+        btrim(regexp_replace(h.pageview_url,'[^a-zA-Z0-9]',' ','g')) AS landing_page,
+        COUNT(wp.*) AS viewed
+    FROM homepage h
+    INNER JOIN website_pageviews wp
+        ON h.website_session_id = wp.website_session_id
+    GROUP BY 1,2
 )
 
-select 
-    case 
-        when landing_page in ('home','lander 1','lander 2','lander 3','lander 4') 
-        then 'Landing B' 
-        else 'Landing A'
-    end as landing_page,
-    
-    case 
-        when viewed = 1 then 'Yes' 
-        else 'No'  
-        END AS Bounced
+SELECT 
+    CASE 
+        WHEN landing_page IN ('home','lander 1','lander 2','lander 3','lander 4') 
+        THEN 'Landing B' 
+        ELSE 'Landing A' 
+    END AS landing_group,
+
+    CASE 
+        WHEN viewed = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS bounced
 FROM view_number;
 ```
 
 ---
-
 
 
  ## SQL Scripts & Project Files
