@@ -1,8 +1,3 @@
-# Landing Page Performance Analysis
-
-Landing page performance analysis using SQL, Excel, and Power BI to identify conversion drivers, bounce rate issues, and revenue optimization opportunities.
-
----
 
 # Landing Page Performance Analysis  
 SQL • Excel • Power BI • Statistical Analysis
