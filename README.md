@@ -241,16 +241,41 @@ This project demonstrates how SQL-driven data preparation, Excel validation, and
 
 ---
 
-## Next Step
+## 📚 Next Step: Python Learning Path
 
-Currently expanding into Python for:
-- Data cleaning automation
-- ETL pipelines
-- Advanced analytics workflows
+To further strengthen my analytics and data engineering skill set, the next focus areas include:
+
+- Python for data analysis (Pandas, NumPy)  
+- Data visualization (Matplotlib, Seaborn)  
+- Predictive modeling (Scikit-learn)  
+- Healthcare risk scoring models  
+- API and data pipeline development  
+
+This will enable a transition from descriptive analytics to **predictive healthcare analytics**.
 
 ---
 
-## Contact
-- LinkedIn: https://www.linkedin.com/in/emeka-ike-108748198/
-- Email: ikeernest4700@gmail.com
+## 🤝 Open to Opportunities
+
+I am actively seeking opportunities in:
+
+- Data Analyst roles (Entry-Level / Graduate / Junior)  
+- Healthcare Analytics roles  
+- Business Intelligence (BI) Analyst positions  
+- Data Engineering Internships  
+- Graduate Trainee Programs  
+
+I am open to remote, hybrid, and on-site opportunities where I can contribute to data-driven decision-making and continue developing technical expertise.
+
+---
+
+## 📬 Contact
+
+**Ike Ernest**  
+Data Analyst | SQL | Power BI | Healthcare Analytics  
+
+- GitHub: [github.com/ikeernest4700-lab]  
+- LinkedIn: [https://www.linkedin.com/in/emeka-ike-108748198]  
+- Email: [ikeernest4700@gmail.com]  
+
 - Open to entry-level Data Analyst roles, collaborations, or feedback
